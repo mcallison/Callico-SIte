@@ -27,4 +27,8 @@ Route::view('fo_tools', 'fo_tools')
     ->middleware(['auth'])
     ->name('fo_tools');
 
+Route::view('fo_tools_imbuing_recipe_entry', 'fo_tools_imbuing_recipe_entry')
+    ->middleware(['auth'])
+    ->name('fo_tools_imbuing_recipe_entry');
+
 require __DIR__.'/auth.php';
