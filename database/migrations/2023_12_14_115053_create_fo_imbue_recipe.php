@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('fo_imbue_recipe', function (Blueprint $table) {
             $table->id();
             $table->string('name',255);
-            $table->string('location',20);
-            $table->string('action',20);
-            $table->string('element',20);
-            $table->string('domain',20);
+            $table->tinyInteger('location');
+            $table->tinyInteger('action');
+            $table->tinyInteger('element');
+            $table->tinyInteger('domain');
             $table->timestamps();
         });
     }
